@@ -27,8 +27,8 @@ const Navbar = () => {
             <FaTimes />
             ) : (
             <div className="two-lines">
-                <span> _______ </span>
-                <span> _______ </span>
+                <span></span>
+                <span></span>
             </div>
         )}
       </div>

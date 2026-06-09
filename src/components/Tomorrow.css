@@ -1,0 +1,109 @@
+.tomorrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background: #fff;
+  gap: 40px;
+  position: relative;
+}
+
+.tomorrow-left {
+  flex: 1;
+  position: relative;
+}
+
+.pink-glow {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255,100,100,0.15) 0%, transparent 70%);
+  top: -40px;
+  left: -40px;
+  pointer-events: none;
+}
+
+.tomorrow-left h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.italic-text {
+  font-style: italic;
+  color: #ff4757;
+}
+
+.tomorrow-left p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  max-width: 380px;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.read-more:hover {
+  color: #ff4757;
+}
+
+.tomorrow-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.shape-triangle {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 52px solid #ff4757;
+  opacity: 0.8;
+}
+
+.img-circle {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+  border: 5px solid #fff;
+}
+
+.img-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .tomorrow {
+    flex-direction: column;
+    padding: 50px 24px;
+    text-align: center;
+  }
+
+  .tomorrow-left p {
+    max-width: 100%;
+  }
+
+  .img-circle {
+    width: 180px;
+    height: 180px;
+  }
+}
